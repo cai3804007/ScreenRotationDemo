@@ -11,6 +11,7 @@ import UIKit
 class BaseVC: UIViewController {
     
     override var shouldAutorotate: Bool {
+        print("BaseVC.shouldAutorotate")
         return false
     }
     

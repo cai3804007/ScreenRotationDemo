@@ -10,6 +10,8 @@ import UIKit
 
 class FirstVC: BaseVC {
 
+    @IBOutlet weak var currentDirectionLabel: UILabel!
+    
     override var shouldAutorotate: Bool {
         return true
     }
@@ -20,24 +22,27 @@ class FirstVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     @IBAction func protraitAction(_ sender: UIButton) {
-        let orientation = UIInterfaceOrientation.portrait
-        UIDevice.current.setValue(orientation.rawValue, forKey: "orientation")
+        currentDirectionLabel.text = "protrait"
+        driveScreen(to: .portrait)
     }
     
     // 这里界面left
     @IBAction func leftAction(_ sender: UIButton) {
-        let orientation = UIInterfaceOrientation.landscapeRight
-        UIDevice.current.setValue(orientation.rawValue, forKey: "orientation")
+        currentDirectionLabel.text = "left"
+        driveScreen(to: .landscapeRight)
     }
     
     // 这里界面right
     @IBAction func rightAction(_ sender: UIButton) {
-        let orientation = UIInterfaceOrientation.landscapeLeft
-        UIDevice.current.setValue(orientation.rawValue, forKey: "orientation")
+        currentDirectionLabel.text = "right"
+        driveScreen(to: .landscapeLeft)
+    }
+    
+    private func driveScreen(to direction: UIInterfaceOrientation) {
+        UIDevice.current.setValue(direction.rawValue, forKey: "orientation")
     }
     
 }

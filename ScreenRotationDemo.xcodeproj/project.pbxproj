@@ -20,6 +20,8 @@
 		5054E6402008B0FC00C73832 /* VCRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5054E63F2008B0FC00C73832 /* VCRoot.storyboard */; };
 		5054E6422008B10500C73832 /* NavRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5054E6412008B10500C73832 /* NavRoot.storyboard */; };
 		5054E6442008B10F00C73832 /* TabRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5054E6432008B10F00C73832 /* TabRoot.storyboard */; };
+		50653CD3200C5C13004B26A2 /* ThreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50653CD2200C5C13004B26A2 /* ThreeVC.swift */; };
+		50653CD5200C5C29004B26A2 /* FourVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50653CD4200C5C29004B26A2 /* FourVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		5054E63F2008B0FC00C73832 /* VCRoot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VCRoot.storyboard; sourceTree = "<group>"; };
 		5054E6412008B10500C73832 /* NavRoot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavRoot.storyboard; sourceTree = "<group>"; };
 		5054E6432008B10F00C73832 /* TabRoot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabRoot.storyboard; sourceTree = "<group>"; };
+		50653CD2200C5C13004B26A2 /* ThreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeVC.swift; sourceTree = "<group>"; };
+		50653CD4200C5C29004B26A2 /* FourVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 			children = (
 				5054E63A2008B09B00C73832 /* FirstVC.swift */,
 				5054E63D2008B0DC00C73832 /* SecondVC.swift */,
+				50653CD2200C5C13004B26A2 /* ThreeVC.swift */,
+				50653CD4200C5C29004B26A2 /* FourVC.swift */,
 			);
 			path = "控制器";
 			sourceTree = "<group>";
@@ -204,7 +210,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5054E6372008AE5500C73832 /* BaseNavC.swift in Sources */,
+				50653CD3200C5C13004B26A2 /* ThreeVC.swift in Sources */,
 				5054E63B2008B09B00C73832 /* FirstVC.swift in Sources */,
+				50653CD5200C5C29004B26A2 /* FourVC.swift in Sources */,
 				5054E63E2008B0DC00C73832 /* SecondVC.swift in Sources */,
 				5054E6392008AF3200C73832 /* BaseTabBarC.swift in Sources */,
 				5054E62120084BCD00C73832 /* ViewController.swift in Sources */,

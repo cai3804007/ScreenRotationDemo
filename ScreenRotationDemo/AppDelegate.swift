@@ -8,6 +8,8 @@
 
 import UIKit
 
+var isAllowAutorotate = true
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -41,10 +43,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-//    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-//        print("supportedInterfaceOrientationsFor")
-//        return .portrait
-//    }
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        if isAllowAutorotate {
+            return [.portrait, .landscapeLeft, .landscapeRight]
+        }
+        else {
+            return .portrait
+        }
+    }
 
 }
 

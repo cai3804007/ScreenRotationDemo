@@ -24,7 +24,6 @@ class BaseTabBarC: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
 }
