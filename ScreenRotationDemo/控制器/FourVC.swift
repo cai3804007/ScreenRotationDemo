@@ -18,6 +18,7 @@ class FourVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        driveScreen(to: .portrait)
         isAllowAutorotate = false
     }
     
@@ -34,8 +35,11 @@ class FourVC: UIViewController {
         let action = UIAlertAction(title: "知道了", style: .default, handler: nil)
         alertController.addAction(action)
         
-        let orientation = UIInterfaceOrientation.landscapeRight
-        UIDevice.current.setValue(orientation.rawValue, forKey: "orientation")
+        driveScreen(to: .landscapeLeft)
     }
     
+    func driveScreen(to direction: UIInterfaceOrientation) {
+        UIDevice.current.setValue(direction.rawValue, forKey: "orientation")
+    }
+
 }

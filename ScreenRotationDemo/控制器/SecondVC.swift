@@ -10,9 +10,36 @@ import UIKit
 
 class SecondVC: BaseVC {
     
+    /* 模态切换竖->横使用 */
+    
+    //    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    //        return .landscapeLeft
+    //    }
+    //
+    //    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+    //        return .landscapeLeft
+    //    }
+    
+    /* 模态切换横->竖使用 */
+    
+    //    override var shouldAutorotate: Bool {
+    //        return true
+    //    }
+    
+    //    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+    //        return .portrait
+    //    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        /* push后使用跳转方向 */
+        driveScreen(to: .portrait)
     }
 
     // 点击无用,因为被关闭了

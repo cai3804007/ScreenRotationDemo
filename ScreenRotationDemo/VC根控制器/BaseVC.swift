@@ -29,3 +29,11 @@ class BaseVC: UIViewController {
     }
     
 }
+
+extension BaseVC {
+    
+    func driveScreen(to direction: UIInterfaceOrientation) {
+        UIDevice.current.setValue(direction.rawValue, forKey: "orientation")
+    }
+    
+}

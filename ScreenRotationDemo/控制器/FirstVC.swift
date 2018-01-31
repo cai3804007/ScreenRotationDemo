@@ -41,10 +41,6 @@ class FirstVC: BaseVC {
         driveScreen(to: .landscapeLeft)
     }
     
-    private func driveScreen(to direction: UIInterfaceOrientation) {
-        UIDevice.current.setValue(direction.rawValue, forKey: "orientation")
-    }
-    
 }
 
 
